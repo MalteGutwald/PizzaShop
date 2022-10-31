@@ -1,0 +1,38 @@
+<div class="main-header">
+  <div id="divBars">
+<!--    <span id="bars"><i class="fa fa-solid fa-bars"></i></span>-->
+
+    <div class="menu-container" clickOutside (clickOutside)="clickedOutside()">
+      <div id="bars" class="menu-toggler" (click)="toggleMenu()"><i class="fa fa-solid fa-bars"></i></div>
+      <div class="menu" *ngIf="isMenuOpened">
+        <ul id='header-nav'>
+          <li><a href="#news">Aktuelle Informationen</a></li>
+          <li><a href="#reviews">Kundenbewertungen</a></li>
+          <li><a href="#gallery1">Galerie</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+  <img hfre="#top" src="../assets/logo.png" id="logo">
+
+  <div id="header-buttons">
+
+    <div class="header-button">
+      <a href="menu">Menü Ansehen</a>
+    </div>
+
+    <div class="header-button">
+      <a href=""><i class="fa far fa-shopping-cart"></i>Bestellen </a>
+    </div>
+
+    <div class="header-button">
+      <a href="backoffice"><i class="fa fa-solid fa-phone"></i>Jetzt Anrufen</a>
+    </div>
+
+  </div>
+  <hr>
+</div>

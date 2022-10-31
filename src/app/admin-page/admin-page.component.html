@@ -1,0 +1,39 @@
+<div id="adminPage-main">
+  <h2 id="top">Backoffice</h2>
+
+  <div id="menu-main">
+
+    <img src="../assets/menu_image.avif">
+    <h2 id="menu-top" >Menü</h2>
+    <div id="search">
+      <span><i class="fa fas fa-search"></i></span>
+      <span><i class="fa fas fa-chevron-left"></i></span>
+
+      <div id="categorys">
+        <a id="select-category" *ngFor="let category of categorys"><span>{{category.category}}</span></a>
+      </div>
+
+      <span><i class="fa fas fa-chevron-right"></i></span>
+    </div>
+
+    <button type="button" class="btn btn-light">Kategorie hinzufügen</button>
+
+    <div *ngFor="let category of categorys" id="list">
+      <div id="category">
+        <h1  class="heading">{{category.category}}</h1>
+        <add-product-button></add-product-button>
+      </div>
+
+      <div *ngFor="let dish of category.dishes; let i = index" class="dish" >
+        <h3 class="dishName">{{dish.name}}</h3>
+        <a class="dishInfo">Produktinfo</a>
+        
+        <edit-product-button [key]="dish.key"></edit-product-button>
+
+        <p class="dishDiscription">{{dish.description}}</p>
+        <p class="prieceDish"> {{dish.price}} €</p>
+      </div>
+
+    </div>
+  </div>
+</div>

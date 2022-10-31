@@ -1,0 +1,100 @@
+div#homepage-main {
+  margin-top:80px;
+  overflow-x: hidden;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #fcefe6;
+}
+h1 {
+  color: #db5e5e;
+  font-family: "Open Sans Condensed",sans-serif;
+  font-size: 56px;
+}
+span{
+  font-family: "Lora",serif;
+  font-size: 20px;
+}
+button{
+  margin-top: 5px;
+  text-transform: uppercase;
+}
+img#building {
+   margin-top: 20px;
+}
+a {
+  margin-left:5px;
+  margin-right:5px;
+  border-bottom: 1px solid #db5e5e;
+  color: #db5e5e ;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+a:hover{
+  color: black;
+  border-bottom: 1px solid black;
+}
+div#gallery{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+    justify-content: center;
+}
+div#gallery img{
+
+  margin: 5px;
+
+  max-height:350px;
+}
+
+div#infos{
+  margin-top: 50px;
+}
+div#contact{
+  width: 20vw;
+  min-width: 300px;
+  float: left;
+  h2{
+      margin-bottom: 20px;
+   }
+   button{
+         margin-bottom: 20px;
+      }
+  @media (max-width: 900px) {
+    float: initial;
+    margin-bottom: 50px;
+  }
+}
+
+div#address{
+  width: 20vw;
+  min-width: 300px;
+  float: left;
+  h2{
+      margin-bottom: 20px;
+   }
+   button{
+      margin-bottom: 20px;
+   }
+  @media (max-width: 900px) {
+    margin-bottom: 50px;
+    float: initial;
+  }
+}
+div#openingHours{
+  width: 20vw;
+  min-width: 300px;
+  float: left;
+  h2{
+    margin-bottom: 20px;
+  }
+  @media (max-width: 900px) {
+    margin-bottom: 50px;
+   float: initial;
+  }
+}
+
+

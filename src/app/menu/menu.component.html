@@ -1,0 +1,28 @@
+<div id="menu-main">
+
+  <img src="../assets/menu_image.avif">
+  <h2 id="top" >Menü</h2>
+  <div id="search">
+    <span><i class="fa fas fa-search"></i></span>
+    <span><i class="fa fas fa-chevron-left"></i></span>
+
+    <div id="categorys">
+        <a id="select-category" *ngFor="let category of categorys"><span>{{category.category}}</span></a>
+    </div>
+
+      <span><i class="fa fas fa-chevron-right"></i></span>
+  </div>
+
+  <div *ngFor="let category of categorys" id="list">
+    <h1  class="heading">{{category.category}}</h1>
+
+    <div *ngFor="let dish of category.dishes" class="dish">
+      <h3 class="dishName">{{dish.name}}</h3>
+      <a class="dishInfo">Produktinfo</a>
+      <button type="button" class="btn btn-light"><i class="fa fa-regular fa-plus"></i></button>
+      <p class="dishDiscription">{{dish.description}}</p>
+      <p class="prieceDish"> {{dish.price}} €</p>
+    </div>
+
+  </div>
+</div>

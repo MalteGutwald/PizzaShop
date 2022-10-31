@@ -1,0 +1,109 @@
+div#adminPage-main{
+    margin-top:80px;
+    overflow-x: hidden;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #fcefe6;
+}
+h2#menu-top{
+  color: #db5e5e;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 56px;
+}
+
+img{
+  width:80%;
+  height:auto;
+}
+div#menu-main{
+    margin-top:80px;
+    overflow-x: hidden;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #fcefe6;
+}
+h2 {
+  color: #db5e5e;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 56px;
+}
+
+div#search{
+  position:absolute;
+  top:750px;
+  display: flex;
+  span {
+    i{
+      font-size:30px;
+      margin-left:5px;
+      margin-right:5px;
+      background-color: #f2f0f0;
+      border: solid black 1px;
+      border-radius: 10px;
+    }
+    :hover{
+        background:#d9d7d7;
+    }
+  }
+  div#categorys{
+    max-width : 60vw;
+    overflow: hidden;
+    a{
+      position: relative; // In JS
+  //       left: -50px;
+      margin-left: 5px;
+      margin-right: 5px;
+      background-color: #0a1930;
+      border: 1px solid #fff;
+      border-radius: 999px;
+      color: white;
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .05rem;
+      padding: .5rem 1rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      transition: all .3s ease-in-out;
+      span{
+        color: white;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+div#category{
+  margin-top: 20px;
+  display: inline-flex;
+}
+
+
+div.dish{
+  border: solid black 1px;
+  width: 80vw;
+  border-radius:10px;
+  h3.dishName{
+  display:inline;
+    margin-left: 50px;
+  }
+  a.dishInfo{
+    margin-left: 50px;
+  }
+  edit-product-button{
+    position: absolute;
+    right: 10vw;
+  }
+  p{
+    margin-left: 50px;
+  }
+  p.dishDiscription{
+    margin-top: 16px;
+  }
+  p.prieceDish{
+    font-size:20px;
+  }
+}
+
