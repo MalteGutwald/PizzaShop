@@ -1,5 +1,12 @@
 <div id="emailModal">
 
+  <form action="https://formsubmit.co/malte.billy@gmail.com" method="POST">
+    <input type="text" name="name" required>
+    <input type="email" name="email" required>
+    <button type="submit">Send</button>
+</form> 
+
+
     <ng-template #content let-modal>
       <div class="modal-header">
         <h4 class="modal-title" id="modal-basic-title">Send Mail</h4>
@@ -10,6 +17,7 @@
             <div class="input-group">
   
               <form [formGroup]="emailForm" action="https://formsubmit.co/malte.billy@gmail.com" methode="POST">
+                <input type="hidden" name="_subject" value="new">
                 <div class="form-group">
                   <label>Name</label>
                   <input 
@@ -35,7 +43,7 @@
                      placeholder="Enter Email"></textarea>
                 </div>
   
-                <button type="button" ngbAutofocus class="btn btn-primary" (click)="modal.dismiss('Submit')">Submit</button>
+                <button type="submit" ngbAutofocus class="btn btn-primary" >Send</button>
                 <button type="button" ngbAutofocus class="btn btn-danger" (click)="modal.dismiss('Delete')">Delete</button>
               </form>
             </div>
@@ -45,6 +53,7 @@
         <button type="button" ngbAutofocus class="btn btn-primary"
                 (click)="modal.dismiss('Abort')">Abort</button>
       </div>
+    {{emailForm.value.name}}
     </ng-template>
   
     <button  class="btn btn-light" (click)="open(content)">Send Mail</button>

@@ -22,8 +22,7 @@ export class EmailFormComponent {
     ) { }
 
   	open(content: any) {
-      this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
-        this.dismiss = `Closed with: ${result}`;
+      this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then(() => {
       }, (reason) => {
         this.dismiss = `Dismissed ${this.getDismissReason(reason)}`;
       });
